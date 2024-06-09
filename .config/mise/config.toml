@@ -1,0 +1,67 @@
+[env]
+# AWS
+AWS_CONFIG_FILE="{{env.XDG_CONFIG_HOME}}/aws/config"
+AWS_SHARED_CREDENTIALS_FILE="{{env.XDG_CONFIG_HOME}}/aws/credentials"
+
+# C#
+DOTNET_CLI_HOME="{{env.XDG_DATA_HOME}}/dotnet"
+
+# Node
+NPM_HOME="{{env.XDG_DATA_HOME}}/npm"
+NPM_CONFIG_USERCONFIG="{{env.XDG_CONFIG_HOME}}/npm"
+NPM_CONFIG_CACHE="{{env.XDG_CACHE_HOME}}/npm"
+NPM_CONFIG_TMP="{{env.XDG_CONFIG_HOME}}/npm/tmp"
+MISE_NODE_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-npm-packages"
+
+# OCaml
+OPAMROOT="{{env.XDG_DATA_HOME}}/opam"
+
+# Perl
+CPAN_HOME="{{env.XDG_CONFIG_HOME}}/cpan"
+
+# Python
+MISE_PYTHON_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-python-packages"
+
+# R
+R_EXTRA_CONFIGURE_OPTIONS="CFLAGS=-I/opt/homebrew/lib CPPFLAGS=-I/opt/homebrew/include LDFLAGS=-L/opt/homebrew/include --enable-R-shlib --with-cairo --with-x=no"
+
+# Ruby
+MISE_RUBY_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-gems"
+
+[tools]
+# ansible-base = "latest"
+# aws-sam-cli = "latest"
+# awscli = "latest"
+dotnet = "latest"
+# elixir = "latest"
+fd = "latest"
+# ffmpeg = "latest"
+# gcloud = "latest"
+go = "latest" # for nvim
+# helm = "latest"
+java = [
+    "openjdk-17",
+    # "openjdk-19", 
+    # "openjdk-21"
+]
+julia = "latest" # for nvim
+# kotlin = "latest"
+lazygit = "latest"
+# lua = "latest" # for nvim (just do brew install luarocks)
+nodejs = "latest"
+opam = "latest"
+perl = "latest"
+# php = "latest" # brew install autoconf automake bison freetype gd gettext icu4c krb5 libedit libiconv libjpeg libpng libxml2 libzip pkg-config re2c zlib
+python = [
+    "3.12.0", 
+    "latest"
+]
+r = "latest" # brew install gcc xz libxt cairo pcre2 pango
+ruby = "latest" # brew install openssl@3 readline libyaml gmp
+# rust = "stable"
+ripgrep = "latest"
+# scala = "latest"
+# terraform = "latest"
+tinytex = "latest"
+tree-sitter = "latest"
+usage = "latest"
