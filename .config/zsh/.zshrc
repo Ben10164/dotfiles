@@ -14,7 +14,6 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 # ZSH config
 ZSH_THEME="powerlevel10k/powerlevel10k"
-# ZSH_THEME=""
 ZSH_AUTOSUGGEST_STRATEGY=(completion)
 DISABLE_AUTO_TITLE="true"
 
@@ -32,11 +31,10 @@ plugins=(
 # Load plugins
 source $OMZ/oh-my-zsh.sh
 
+# Load p10k
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+# Activate Mise
 eval "$($HOME/.local/bin/mise activate zsh)"
 
-# [ -f "$XDG_DATA_HOME/ghcup/env" ] && . "$XDG_DATA_HOME/ghcup/env" # ghcup-env
-
 # zprof
-
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
