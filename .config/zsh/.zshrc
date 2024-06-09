@@ -6,7 +6,7 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 # eval "$(pyenv init -)"
 
 # More config
-[[ ! -r /Users/benpuryear/.local/share/opam/opam-init/init.zsh ]] || source /Users/benpuryear/.local/share/opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+[[ ! -r $XDG_DATA_HOME/opam/opam-init/init.zsh ]] || source $XDG_DATA_HOME/opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 # ZSH config
 # ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -30,6 +30,6 @@ source $OMZ/oh-my-zsh.sh
 
 eval "$($HOME/.local/bin/mise activate zsh)"
 
-# [ -f "/Users/benpuryear/.local/share/ghcup/env" ] && . "/Users/benpuryear/.local/share/ghcup/env" # ghcup-env
+# [ -f "$XDG_DATA_HOME/ghcup/env" ] && . "$XDG_DATA_HOME/ghcup/env" # ghcup-env
 
 # zprof
