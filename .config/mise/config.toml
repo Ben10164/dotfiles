@@ -29,24 +29,30 @@ R_EXTRA_CONFIGURE_OPTIONS="CFLAGS=-I/opt/homebrew/lib CPPFLAGS=-I/opt/homebrew/i
 MISE_RUBY_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-gems"
 
 [tools]
-# ansible-base = "latest"
+### programs/tools
 # aws-sam-cli = "latest"
 # awscli = "latest"
-dotnet = "latest"
-# elixir = "latest"
-fd = "latest"
+fd = "latest" # for nvim (main)
 # ffmpeg = "latest"
 # gcloud = "latest"
-go = "latest" # for nvim
+lazygit = "latest" # for nvim (extra)
+ripgrep = "latest" # for nvim (extra)
+tree-sitter = "latest" # for nvim (main)
+usage = "latest" # for mise autocomplete
+
+### languages
+# ansible-base = "latest"
+dotnet = "latest"
+# elixir = "latest"
+# go = "latest" # for nvim (opt)
 # helm = "latest"
 java = [
     "openjdk-17",
     # "openjdk-19", 
     # "openjdk-21"
 ]
-julia = "latest" # for nvim
+# julia = "latest" # for nvim (opt)
 # kotlin = "latest"
-lazygit = "latest"
 # lua = "latest" # for nvim (just do brew install luarocks)
 nodejs = "latest"
 opam = "latest"
@@ -58,10 +64,8 @@ python = [
 ]
 r = "latest" # brew install gcc xz libxt cairo pcre2 pango
 ruby = "latest" # brew install openssl@3 readline libyaml gmp
-# rust = "stable"
-ripgrep = "latest"
+# rust = "stable" # use rustup as it is official
 # scala = "latest"
 # terraform = "latest"
 tinytex = "latest"
-tree-sitter = "latest"
-usage = "latest"
+
