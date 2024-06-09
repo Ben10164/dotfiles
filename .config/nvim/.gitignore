@@ -1,0 +1,11 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+.vscode
+.python-version
+.DS_Store
