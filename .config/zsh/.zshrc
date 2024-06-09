@@ -28,7 +28,7 @@ plugins=(
 # Load plugins
 source $OMZ/oh-my-zsh.sh
 
-eval "$(/Users/benpuryear/.local/bin/mise activate zsh)"
+eval "$($HOME/.local/bin/mise activate zsh)"
 
 # [ -f "/Users/benpuryear/.local/share/ghcup/env" ] && . "/Users/benpuryear/.local/share/ghcup/env" # ghcup-env
 
