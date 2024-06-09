@@ -26,7 +26,6 @@ plugins=(
 )
 
 # Load plugins
-source $ZDOTDIR/posh
 source $OMZ/oh-my-zsh.sh
 
 eval "$(/Users/benpuryear/.local/bin/mise activate zsh)"
