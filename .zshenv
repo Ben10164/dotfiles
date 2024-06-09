@@ -27,7 +27,7 @@ export R_EXTRA_CONFIGURE_OPTIONS="CFLAGS=-I/opt/homebrew/lib CPPFLAGS=-I/opt/hom
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export PATH="$CARGO_HOME/bin:$PATH"
-. "/Users/benpuryear/.local/share/cargo/env"
+. "$CARGO_HOME/env"
 
 # C#
 # export DOTNET_CLI_HOME="$XDG_DATA_HOME/dotnet" # not needed with mise?
