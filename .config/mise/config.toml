@@ -44,14 +44,14 @@ usage = "latest" # for mise autocomplete
 # ansible-base = "latest"
 dotnet = "latest"
 # elixir = "latest"
-# go = "latest" # for nvim (opt)
+go = "latest" # for nvim (opt)
 # helm = "latest"
 java = [
     "openjdk-17",
     # "openjdk-19", 
     # "openjdk-21"
 ]
-# julia = "latest" # for nvim (opt)
+julia = "latest" # for nvim (opt)
 # kotlin = "latest"
 # lua = "latest" # for nvim (just do brew install luarocks)
 nodejs = "latest"
