@@ -6,6 +6,11 @@ AWS_SHARED_CREDENTIALS_FILE="{{env.XDG_CONFIG_HOME}}/aws/credentials"
 # C#
 DOTNET_CLI_HOME="{{env.XDG_DATA_HOME}}/dotnet"
 
+# ffmpeg
+# brew install automake fdk-aac lame libass libtool libvorbis libvpx opus sdl2 shtool texi2html theora wget x264 x265 xvid nasm zimg
+### ASDF_FFMPEG_ENABLE="libaom fontconfig freetype frei0r lame libass libvorbis libvpx opus rtmpdump sdl2 snappy theora x264 x265 xz"
+ASDF_FFMPEG_ENABLE_TOOLS="ffescape graph2dot"
+
 # Node
 NPM_HOME="{{env.XDG_DATA_HOME}}/npm"
 NPM_CONFIG_USERCONFIG="{{env.XDG_CONFIG_HOME}}/npm"
@@ -32,28 +37,30 @@ MISE_RUBY_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-gems"
 ### programs/tools
 # aws-sam-cli = "latest"
 # awscli = "latest"
-fd = "latest" # for nvim (main)
-# ffmpeg = "latest"
+fd = "latest"
+ffmpeg = "latest"
+# fzf = "latest"
 # gcloud = "latest"
-lazygit = "latest" # for nvim (extra)
-ripgrep = "latest" # for nvim (extra)
-tree-sitter = "latest" # for nvim (main)
+lazygit = "latest"
+pandoc = "latest" # for r
+ripgrep = "latest"
+tree-sitter = "latest"
 usage = "latest" # for mise autocomplete
 
 ### languages
 # ansible-base = "latest"
 dotnet = "latest"
 # elixir = "latest"
-go = "latest" # for nvim (opt)
+go = "latest"
 # helm = "latest"
 java = [
     "openjdk-17",
     # "openjdk-19", 
     # "openjdk-21"
 ]
-julia = "latest" # for nvim (opt)
+julia = "latest"
 # kotlin = "latest"
-# lua = "latest" # for nvim (just do brew install luarocks)
+# lua = "latest" # just do brew install luarocks
 nodejs = "latest"
 opam = "latest"
 perl = "latest"
@@ -62,7 +69,7 @@ python = [
     "3.12.0", 
     "latest"
 ]
-r = "latest" # brew install gcc xz libxt cairo pcre2 pango
+r = "latest" # brew install pcre2 gfortran pandoc
 ruby = "latest" # brew install openssl@3 readline libyaml gmp
 # rust = "stable" # use rustup as it is official
 # scala = "latest"
