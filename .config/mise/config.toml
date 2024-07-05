@@ -39,7 +39,7 @@ MISE_RUBY_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-gems"
 # awscli = "latest"
 fd = "latest"
 ffmpeg = "latest"
-# fzf = "latest"
+fzf = "latest"
 # gcloud = "latest"
 lazygit = "latest"
 pandoc = "latest" # for r
@@ -59,6 +59,7 @@ java = [
     # "openjdk-21"
 ]
 julia = "latest"
+# jq = "latest"
 # kotlin = "latest"
 # lua = "latest" # just do brew install luarocks
 nodejs = "latest"
@@ -75,4 +76,3 @@ ruby = "latest" # brew install openssl@3 readline libyaml gmp
 # scala = "latest"
 # terraform = "latest"
 tinytex = "latest"
-
