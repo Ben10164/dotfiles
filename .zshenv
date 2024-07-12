@@ -13,6 +13,7 @@ export OMZ="$XDG_DATA_HOME/oh-my-zsh"
 # Haskell
 export GHCUP_USE_XDG_DIRS="TRUE"
 export STACK_XDG="TRUE"
+export CABAL_DIR="$XDG_DATA_HOME/cabal"
 export PATH="$HOME/.local/bin:$PATH"
 
 # Python
@@ -28,5 +29,8 @@ export PATH="$CARGO_HOME/bin:$PATH"
 
 # Neovim
 export BOB_CONFIG="$XDG_CONFIG_HOME/bob/config.json"
+
+# Lean
+export ELAN_HOME="$XDG_DATA_HOME/elan"
 
 # export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker # doesnt seem to work either...
