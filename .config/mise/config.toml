@@ -19,6 +19,7 @@ NPM_CONFIG_TMP="{{env.XDG_CONFIG_HOME}}/npm/tmp"
 MISE_NODE_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-npm-packages"
 
 # OCaml
+# opam install coq vscoq-language-server
 OPAMROOT="{{env.XDG_DATA_HOME}}/opam"
 
 # Perl
