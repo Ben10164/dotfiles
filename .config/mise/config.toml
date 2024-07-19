@@ -19,7 +19,8 @@ NPM_CONFIG_TMP="{{env.XDG_CONFIG_HOME}}/npm/tmp"
 MISE_NODE_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-npm-packages"
 
 # OCaml
-# opam install coq vscoq-language-server
+# opam switch create 5.0.0
+# opam switch set 5.0.0
 OPAMROOT="{{env.XDG_DATA_HOME}}/opam"
 
 # Perl
@@ -38,14 +39,14 @@ MISE_RUBY_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-gems"
 ### programs/tools
 # aws-sam-cli = "latest"
 # awscli = "latest"
-fd = "latest"
+fd = "latest" # for nvim
 ffmpeg = "latest"
-fzf = "latest"
+fzf = "0.53.0"
 # gcloud = "latest"
-lazygit = "latest"
+lazygit = "latest" # for nvim
 pandoc = "latest" # for r
-ripgrep = "latest"
-tree-sitter = "latest"
+ripgrep = "latest" # for nvim
+tree-sitter = "latest" # for nvim
 usage = "latest" # for mise autocomplete
 
 ### languages
@@ -71,9 +72,8 @@ python = [
     "3.12.0", 
     "latest"
 ]
-r = "latest" # brew install pcre2 gfortran pandoc
+r = "latest" # brew install pcre2 gfortran
 ruby = "latest" # brew install openssl@3 readline libyaml gmp
-# rust = "stable" # use rustup as it is official
 # scala = "latest"
 # terraform = "latest"
 tinytex = "latest"
