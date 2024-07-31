@@ -19,8 +19,8 @@ NPM_CONFIG_TMP="{{env.XDG_CONFIG_HOME}}/npm/tmp"
 MISE_NODE_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-npm-packages"
 
 # OCaml
-# opam switch create 5.0.0
-# opam switch set 5.0.0
+# opam switch create 4.0.0
+# opam switch set 4.0.0
 OPAMROOT="{{env.XDG_DATA_HOME}}/opam"
 
 # Perl
