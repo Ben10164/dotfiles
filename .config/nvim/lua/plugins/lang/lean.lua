@@ -1,7 +1,19 @@
 return {
   {
     "Julian/lean.nvim",
+    commit = "fd7262270c68667fae85ad4703ac84e34c84d5e1",
     event = { "BufReadPre *.lean", "BufNewFile *.lean" },
+    optional = true,
+
+    config = function(_, opts)
+      require("lean").setup(opts)
+      vim.api.nvim_create_autocmd({ "WinClosed", "VimResized" }, {
+        -- TODO: Only when Lean is started...
+        callback = require("lean.infoview").reposition
+        
+      })
+      vim.b.trouble_lualine = false
+    end,
 
     -- see details below for full configuration options
     opts = {
@@ -113,6 +125,12 @@ return {
         -- window.
         on_lines = nil,
       },
+
+      hook = {
+        on_filetype = function()
+          vim.wo.spell = true
+        end,
+      }
     },
   },
 }

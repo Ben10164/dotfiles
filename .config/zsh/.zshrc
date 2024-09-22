@@ -38,4 +38,6 @@ source $OMZ/oh-my-zsh.sh
 # Activate Mise
 eval "$($HOME/.local/bin/mise activate zsh)"
 
+# source "$(mise where gcloud)/completion.zsh.inc"
+
 # zprof

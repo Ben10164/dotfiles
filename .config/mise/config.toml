@@ -39,41 +39,44 @@ MISE_RUBY_DEFAULT_PACKAGES_FILE="{{env.XDG_CONFIG_HOME}}/mise/default-gems"
 ### programs/tools
 # aws-sam-cli = "latest"
 # awscli = "latest"
-fd = "latest" # for nvim
+fd = "latest" # for lazyvim
 ffmpeg = "latest"
 fzf = "0.53.0"
 # gcloud = "latest"
-lazygit = "latest" # for nvim
-pandoc = "latest" # for r
-ripgrep = "latest" # for nvim
-tree-sitter = "latest" # for nvim
+lazygit = "latest" # for lazyvim
+# pandoc = "latest" # for r
+ripgrep = "latest" # for lazyvim
+tree-sitter = "latest"
 usage = "latest" # for mise autocomplete
 
 ### languages
 # ansible-base = "latest"
-dotnet = "latest"
+# clojure = "latest"
+# dotnet = "latest"
 # elixir = "latest"
-go = "latest"
+# elm = "latest"
+# go = "latest"
+# gleam = "latest"
 # helm = "latest"
 java = [
-    "openjdk-17",
+    # "openjdk-17",
     # "openjdk-19", 
     # "openjdk-21"
 ]
-julia = "latest"
+# julia = "latest"
 # jq = "latest"
 # kotlin = "latest"
-# lua = "latest" # just do brew install luarocks
+# lua = "5.1" # just do brew install luarocks
 nodejs = "latest"
-opam = "latest"
-perl = "latest"
+# opam = "latest"
+# perl = "latest"
 # php = "latest" # brew install autoconf automake bison freetype gd gettext icu4c krb5 libedit libiconv libjpeg libpng libxml2 libzip pkg-config re2c zlib
 python = [
-    "3.12.0", 
-    "latest"
+    "3.12.0",
 ]
-r = "latest" # brew install pcre2 gfortran
-ruby = "latest" # brew install openssl@3 readline libyaml gmp
+# r = "latest" # brew install pcre2 gfortran
+# ruby = "latest" # brew install openssl@3 readline libyaml gmp
 # scala = "latest"
 # terraform = "latest"
-tinytex = "latest"
+# tinytex = "latest"
+
